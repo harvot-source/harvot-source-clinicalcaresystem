@@ -3,45 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Patients' Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        table,th {
+            border:7px solid; color: darkgreen;
+            border-collapse:collapse;
+            padding: 15px;
+            width: 500px;       
+        }
+        table {
+            margin-left: 30%;
+        }
+        td{
+            border: 1px solid green;
+            padding: 15px;
+            background-color: blanchedalmond;
+        }
+        th{
+            text-align: center;
+            height: 40px;
+            background-color: azure;          
+        }
+        .all-cell-1 {
+            background-color: yellow;
+        }
+        .all-cell-3{
+            background-color: rgb(237, 237, 218);
+        }
+        .studentinfoheader {
+            background-color:rgb(250, 250, 185);
+        }
+        .Contacts {
+            background-color: rgb(175, 232, 173);
+        }
+    </style>
 </head>
 <body>
-    <form action="" class="">
-        <div class="p-2">
-            <input type="text" id="firstname" class="mx-3 border" placeholder="Firstname"> 
-        </div> 
-        <div class="p-2">
-            <input type="text" id="firstname" class="mx-3 border" placeholder="Middle"> 
-        </div> 
-        
-        <div class="p-2">                              
-            <input type="text" id="lastname" class="mx-3 border" placeholder="Lastname">
-        </div>
-        <div class="p-2">                              
-            <input type="text" id="lastname" class="mx-3 border" placeholder="Birthdate">
-        </div>
-        <div class="p-2">                              
-            <input type="text" id="lastname" class="mx-3 border" placeholder="Age">
-        </div>
-        <div class="p-2">
-            <input type="email" id="email" class="mx-3 border w-75" placeholder="Email Address">
-        </div>
-        <!-- <div class="p-2">
-            <input type="text" id="password" class="mx-3 border w-75" placeholder="Password">
-        </div> -->
-        <!-- <div class="p-2">
-            <textarea rows="10" cols="55px" placeholder="Please type your message here"></textarea><br>
-        </div> -->
-        <div class="p-2">
-            <input type="submit" id="submit" value="submit" class="">
-            <input type="reset" id="reset" value="reset" class="">
-        </div>
-        <div class=" margin">
-            <a href="" class="p-3"><i class="bi bi-facebook"></i></a>
-            <a href="" class="p-3"><i class="bi bi-google"></i></a>
-            <a href="" class="p-3"><i class="bi bi-twitter"></i></a>
-            <a href="" class="p-2"><i class="bi bi-github"></i></a>
-        </div>           
-    </form> 
+        <div class="d-flex">
+            <table class="table-class" id="table-id">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="all-cell-1">Ruby</td>
+                        <td>Alpha</td>
+                        <td class="all-cell-3">
+                            <p class="d-flex justify-content-center">
+                                <a href="#" class=" p-2 ">
+                                    <i class="bi bi-facebook"></i>
+                                </a> 
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-instagram"></i>
+                                </a>                           
+                                <a href="#" class="p-2">
+                                    <i class="bi bi-twitter"></i>                    
+                                </a>
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </a>  
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="all-cell-1">Iris</td>
+                        <td>Conti</td>
+                        <td class="all-cell-3">
+                            <p class="d-flex justify-content-center">
+                                <a href="#" class=" p-2 ">
+                                    <i class="bi bi-facebook"></i>
+                                </a> 
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-instagram"></i>
+                                </a>                           
+                                <a href="#" class="p-2">
+                                    <i class="bi bi-twitter"></i>                    
+                                </a>
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </a>  
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="all-cell-1">Maple</td>
+                        <td>Seth</td>
+                        <td class="all-cell-3">
+                            <p class="d-flex justify-content-center">
+                                <a href="#" class=" p-2 ">
+                                    <i class="bi bi-facebook"></i>
+                                </a> 
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-instagram"></i>
+                                </a>                           
+                                <a href="#" class="p-2">
+                                    <i class="bi bi-twitter"></i>                    
+                                </a>
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </a>  
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="all-cell-1">Kaka</td>
+                        <td>Koko</td>
+                        <td class="all-cell-3">
+                            <p class="d-flex justify-content-center">
+                                <a href="#" class=" p-2 ">
+                                    <i class="bi bi-facebook"></i>
+                                </a> 
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-instagram"></i>
+                                </a>                           
+                                <a href="#" class="p-2">
+                                    <i class="bi bi-twitter"></i>                    
+                                </a>
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </a>  
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="all-cell-1">Lala</td>
+                        <td>Letle</td>
+                        <td class="all-cell-3">
+                            <p class="d-flex justify-content-center">
+                                <a href="#" class=" p-2 ">
+                                    <i class="bi bi-facebook"></i>
+                                </a> 
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-instagram"></i>
+                                </a>                           
+                                <a href="#" class="p-2">
+                                    <i class="bi bi-twitter"></i>                    
+                                </a>
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </a>  
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="all-cell-1">Mama</td>
+                        <td>Momo</td>
+                        <td class="all-cell-3">
+                            <p class="d-flex justify-content-center">
+                                <a href="#" class=" p-2 ">
+                                    <i class="bi bi-facebook"></i>
+                                </a> 
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-instagram"></i>
+                                </a>                           
+                                <a href="#" class="p-2">
+                                    <i class="bi bi-twitter"></i>                    
+                                </a>
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </a>  
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="all-cell-1">Pepoy</td>
+                        <td>Boang</td>
+                        <td class="all-cell-3">
+                            <p class="d-flex justify-content-center">
+                                <a href="#" class=" p-2 ">
+                                    <i class="bi bi-facebook"></i>
+                                </a> 
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-instagram"></i>
+                                </a>                           
+                                <a href="#" class="p-2">
+                                    <i class="bi bi-twitter"></i>                    
+                                </a>
+                                <a href="#" class=" p-2">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </a>  
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>   
+            
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
