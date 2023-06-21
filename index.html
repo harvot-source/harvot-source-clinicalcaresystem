@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
         a {
             border: 5px;
         }
-        form {
-          
+
+        img {
+            width: 5rem;
         }
     </style>
 </head>
+
 <body>
-    <div class="container justify-content-center">
-        <form action="" class="p-5 bg-info w-25 rounded-5">
-            <div class="p-2">
-                <input type="text" id="firstname" class="mx-3 border" placeholder="Firstname"> 
-            </div> 
-            <div class="p-2">
-                <input type="password" id="password" class="mx-3 border" placeholder="Password"> 
-            </div> 
-            <div class="px-5"> 
-                <a class="btn btn-primary my-3" href="patient.html">Login</a>                                        
-            </div>         
-        </form> 
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#logo" class="navbar-brand mx-3">
+                <img src="osf-healthcare-logo-vector.svg" alt="logo"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcollapse">
+                <div class="navbar-nav">
+                    <a href="#home" class="nav-item nav-link active text-light">Home</a>
+                    <a href="#services" class="nav-item nav-link text-light">Services</a>
+                    <a href="#about" class="nav-item nav-link text-light">About Us</a>
+                    <a href="#contact" class="nav-item nav-link text-light">Contact Us</a>
+                </div>
+                <div class="navbar-nav ms-auto mx-3">
+                    <a href="register.html" class="nav-item nav-link text-warning">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br><br>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <form action="" class="p-5 bg-info w-25 rounded-5">
+                <div class="p-2">
+                    <input type="text" id="firstname" class="mx-3 border" placeholder="Firstname">
+                </div>
+                <div class="p-2">
+                    <input type="password" id="password" class="mx-3 border" placeholder="Password">
+                </div>
+                <div class="px-5">
+                    <a class="btn btn-primary my-3" href="patient.html">Login</a>
+                </div>
+            </form>
+        </div>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
